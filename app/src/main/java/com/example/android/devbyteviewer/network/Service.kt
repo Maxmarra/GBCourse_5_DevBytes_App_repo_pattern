@@ -13,6 +13,7 @@ import retrofit2.http.GET
 /**
  * A retrofit service to fetch a devbyte playlist.
  */
+
 interface DevbyteService {
     @GET("devbytes")
     suspend fun getPlaylist(): NetworkVideoContainer
