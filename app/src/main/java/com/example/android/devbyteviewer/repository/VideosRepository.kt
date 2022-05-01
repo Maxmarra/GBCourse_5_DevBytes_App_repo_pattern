@@ -9,7 +9,6 @@ import com.example.android.devbyteviewer.network.DevByteNetwork
 import com.example.android.devbyteviewer.network.asDatabaseModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-
 /**
  * Repository for fetching devbyte videos from the network and storing them on disk
  */
