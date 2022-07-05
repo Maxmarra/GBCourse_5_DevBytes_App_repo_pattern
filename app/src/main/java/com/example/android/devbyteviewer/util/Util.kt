@@ -1,5 +1,4 @@
 package com.example.android.devbyteviewer.util
-
 private val PUNCTUATION = listOf(", ", "; ", ": ", " ")
 
 /**

@@ -24,7 +24,6 @@
             app:playlist = "@{viewModel.playlist}"
 
 
-
         android:layout_gravity="center" />
 
         <androidx.recyclerview.widget.RecyclerView

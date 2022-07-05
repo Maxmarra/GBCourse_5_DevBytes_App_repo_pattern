@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repo_pattern.iml" filepath="$PROJECT_DIR$/.idea/modules/Repo_pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Repo_pattern.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Repo_pattern.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RepoPatternApp.iml" filepath="$PROJECT_DIR$/.idea/modules/RepoPatternApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RepoPatternApp.app.unitTest.iml" />
     </modules>
   </component>
 </project>

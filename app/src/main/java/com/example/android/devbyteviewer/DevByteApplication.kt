@@ -1,5 +1,4 @@
 package com.example.android.devbyteviewer
-
 import android.app.Application
 import timber.log.Timber
 

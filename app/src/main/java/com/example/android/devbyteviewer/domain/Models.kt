@@ -1,5 +1,4 @@
 package com.example.android.devbyteviewer.domain
-
 import com.example.android.devbyteviewer.util.smartTruncate
 
 /**
@@ -12,6 +11,7 @@ import com.example.android.devbyteviewer.util.smartTruncate
 
 /**
  * Videos represent a devbyte that can be played.
+ * Это класс для объекта получаемого через API
  */
 data class DevByteVideo(val title: String,
                         val description: String,

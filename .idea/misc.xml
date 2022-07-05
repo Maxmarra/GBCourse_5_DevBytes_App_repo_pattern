@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/dev/ASP/AS/GBCourse/Data_persistence_05/RepoPatternApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/dev/ASP/AS/GBCourse/Data_persistence_05/RepoPatternApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/dev/ASP/AS/GBCourse/Data_persistence_05/RepoPatternApp/app/src/main/res/drawable/ic_play_circle_outline_black_48dp.xml" value="0.1" />
+        <entry key="..\:/dev/ASP/AS/GBCourse/Data_persistence_05/RepoPatternApp/app/src/main/res/layout/activity_dev_byte_viewer.xml" value="0.371875" />
+        <entry key="..\:/dev/ASP/AS/GBCourse/Data_persistence_05/RepoPatternApp/app/src/main/res/layout/devbyte_item.xml" value="0.371875" />
+        <entry key="..\:/dev/ASP/AS/GBCourse/Data_persistence_05/RepoPatternApp/app/src/main/res/layout/fragment_dev_byte.xml" value="0.371875" />
         <entry key="..\:/development/AndroidStudioProjects/AndroidStudioProjects/google_andr_basics/Data_persistence_05/Repo_pattern/app/src/main/res/layout/activity_dev_byte_viewer.xml" value="0.371875" />
         <entry key="..\:/development/AndroidStudioProjects/AndroidStudioProjects/google_andr_basics/Data_persistence_05/Repo_pattern/app/src/main/res/layout/devbyte_item.xml" value="0.371875" />
         <entry key="..\:/development/AndroidStudioProjects/AndroidStudioProjects/google_andr_basics/Data_persistence_05/Repo_pattern/app/src/main/res/layout/fragment_dev_byte.xml" value="0.371875" />
