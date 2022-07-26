@@ -3,9 +3,10 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8b9b3b4718ca3e7cb4bb1447e13b6741/transformed/navigation-common-ktx-2.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cc4c9f49e5cea9429a162413b550cad5/transformed/navigation-common-ktx-2.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c2cf07063b21e3360f2fe587355d63e/transformed/navigation-common-ktx-2.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c2cf07063b21e3360f2fe587355d63e/transformed/navigation-common-ktx-2.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c2cf07063b21e3360f2fe587355d63e/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3f44f20f6e08a12d3143fec3e0e9a6e1/transformed/navigation-common-ktx-2.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3f44f20f6e08a12d3143fec3e0e9a6e1/transformed/navigation-common-ktx-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3f44f20f6e08a12d3143fec3e0e9a6e1/transformed/navigation-common-ktx-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
