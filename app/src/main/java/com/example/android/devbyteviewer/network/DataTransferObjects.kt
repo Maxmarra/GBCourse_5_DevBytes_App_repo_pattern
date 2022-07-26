@@ -1,35 +1,21 @@
 package com.example.android.devbyteviewer.network
 
 import com.example.android.devbyteviewer.database.DatabaseVideo
-import com.example.android.devbyteviewer.domain.DevByteVideo
+import com.example.android.devbyteviewer.domain.ModelVideo
 import com.squareup.moshi.JsonClass
 
 /**
- * DataTransferObjects go in this file. These are responsible for parsing responses from the server
- * or formatting objects to send to the server. You should convert these to domain objects before
- * using them.
- *
- * @see domain package for
- */
-
-/**
- * VideoHolder holds a list of Videos.
- *
- * This is to parse first level of our network result which looks like
- *
  * {
  *   "videos": []
  * }
  * Расписываем первый объект, в котором лежит список объектов
- * это просто лестница доступа, без этого класса нельзя
+ * это просто лестница доступа, без этого класса нельзя,
  * названия классов придумываем сами
- *
  * */
 @JsonClass(generateAdapter = true)
 data class NetworkVideoContainer(val videos: List<NetworkVideo>)
 
 /**
- * Videos represent a devbyte that can be played.
  * Это уже класс-объект отдельного элемента списка со своими полями
  * описываем их согласно API
  */
@@ -43,13 +29,13 @@ data class NetworkVideo(
         val closedCaptions: String?)
 
 /**
- * Convert Network results to domain objects
- * сразу делаем extension метод для перевода полученных данных из API
+ * сразу делаем extension метод для перевода полученных данных
+ * из API придуманного класса NetworkVideo
  * в класс-модель DevByteVideo и сразу возращаем весь список
  */
-fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
+fun NetworkVideoContainer.asDomainModel(): List<ModelVideo> {
     return videos.map {
-        DevByteVideo(
+        ModelVideo(
                 title = it.title,
                 description = it.description,
                 url = it.url,
@@ -60,7 +46,7 @@ fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
 
 /**
  * Convert Network results to database objects
- * сразу делаем extension метод для перевода данных из класса-модели
+ * сразу делаем extension метод для перевода данных из класса NetworkVideo
  * в объект класса DatabaseVideo для добавления в базу, возращаем весь список
  */
 fun NetworkVideoContainer.asDatabaseModel(): List<DatabaseVideo> {

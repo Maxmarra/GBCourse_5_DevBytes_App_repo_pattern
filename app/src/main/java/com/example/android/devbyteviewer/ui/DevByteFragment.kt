@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.android.devbyteviewer.R
 import com.example.android.devbyteviewer.databinding.DevbyteItemBinding
 import com.example.android.devbyteviewer.databinding.FragmentDevByteBinding
-import com.example.android.devbyteviewer.domain.DevByteVideo
+import com.example.android.devbyteviewer.domain.ModelVideo
 import com.example.android.devbyteviewer.viewmodels.DevByteViewModel
 
 /**
@@ -50,7 +50,7 @@ class DevByteFragment : Fragment() {
      */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.playlist.observe(viewLifecycleOwner, Observer<List<DevByteVideo>> { videos ->
+        viewModel.playlist.observe(viewLifecycleOwner, Observer<List<ModelVideo>> { videos ->
             videos?.apply {
                 viewModelAdapter?.videos = videos
             }
@@ -129,7 +129,7 @@ class DevByteFragment : Fragment() {
     /**
      * Helper method to generate YouTube app links
      */
-    private val DevByteVideo.launchUri: Uri
+    private val ModelVideo.launchUri: Uri
         get() {
             val httpUri = Uri.parse(url)
             return Uri.parse("vnd.youtube:" + httpUri.getQueryParameter("v"))
@@ -140,13 +140,13 @@ class DevByteFragment : Fragment() {
  * Click listener for Videos. By giving the block a name it helps a reader understand what it does.
  *
  */
-class VideoClick(val block: (DevByteVideo) -> Unit) {
+class VideoClick(val block: (ModelVideo) -> Unit) {
     /**
      * Called when a video is clicked
      *
      * @param video the video that was clicked
      */
-    fun onClick(video: DevByteVideo) = block(video)
+    fun onClick(video: ModelVideo) = block(video)
 }
 
 /**
@@ -157,7 +157,7 @@ class DevByteAdapter(val callback: VideoClick) : RecyclerView.Adapter<DevByteVie
     /**
      * The videos that our Adapter will show
      */
-    var videos: List<DevByteVideo> = emptyList()
+    var videos: List<ModelVideo> = emptyList()
         set(value) {
             field = value
             // For an extra challenge, update this to use the paging library.

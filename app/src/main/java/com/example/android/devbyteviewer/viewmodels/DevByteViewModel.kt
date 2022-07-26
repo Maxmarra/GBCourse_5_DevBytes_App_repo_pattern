@@ -7,7 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.example.android.devbyteviewer.domain.DevByteVideo
+import com.example.android.devbyteviewer.domain.ModelVideo
 import com.example.android.devbyteviewer.network.DevByteNetwork
 import com.example.android.devbyteviewer.network.asDomainModel
 import kotlinx.coroutines.*
@@ -39,13 +39,13 @@ class DevByteViewModel(application: Application) : AndroidViewModel(application)
      * A playlist of videos that can be shown on the screen. This is private to avoid exposing a
      * way to set this value to observers.
      */
-    private val _playlist = MutableLiveData<List<DevByteVideo>>()
+    private val _playlist = MutableLiveData<List<ModelVideo>>()
 
     /**
      * A playlist of videos that can be shown on the screen. Views should use this to get access
      * to the data.
      */
-    val playlist: LiveData<List<DevByteVideo>>
+    val playlist: LiveData<List<ModelVideo>>
         get() = _playlist
 
     /**

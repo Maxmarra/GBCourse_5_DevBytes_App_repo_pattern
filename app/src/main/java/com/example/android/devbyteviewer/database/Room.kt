@@ -13,7 +13,6 @@ interface VideoDao {
 }
 
 
-
 @Database(entities = [DatabaseVideo::class], version = 1)
 abstract class VideosDatabase: RoomDatabase() {
     abstract val videoDao: VideoDao

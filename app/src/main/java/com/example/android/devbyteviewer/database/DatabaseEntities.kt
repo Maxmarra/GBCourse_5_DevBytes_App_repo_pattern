@@ -2,14 +2,7 @@ package com.example.android.devbyteviewer.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.android.devbyteviewer.domain.DevByteVideo
-
-
-/**
- * Database entities go in this file. These are responsible for reading and writing from the
- * database.
- */
-
+import com.example.android.devbyteviewer.domain.ModelVideo
 
 /**
  * DatabaseVideo represents a video entity in the database.
@@ -35,9 +28,9 @@ data class DatabaseVideo constructor(
  * метод ниже - где список объектов из базы мы переводим в список объектов
  * класса из модели
  */
-fun List<DatabaseVideo>.asDomainModel(): List<DevByteVideo> {
+fun List<DatabaseVideo>.asDomainModel(): List<ModelVideo> {
         return map {
-                DevByteVideo(
+                ModelVideo(
                         url = it.url,
                         title = it.title,
                         description = it.description,

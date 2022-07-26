@@ -7,7 +7,7 @@
     <data>
         <variable
             name="video"
-            type="com.example.android.devbyteviewer.domain.DevByteVideo" />
+            type="com.example.android.devbyteviewer.domain.ModelVideo" />
 
         <variable
             name="videoCallback"
