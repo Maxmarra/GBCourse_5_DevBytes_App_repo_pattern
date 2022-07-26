@@ -58,7 +58,6 @@ fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
     }
 }
 
-
 /**
  * Convert Network results to database objects
  * сразу делаем extension метод для перевода данных из класса-модели
