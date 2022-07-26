@@ -37,18 +37,19 @@ data class NetworkVideo(
         val closedCaptions: String?)
 
 /**
+ * НЕПОТЯТНО ЗАЧЕМ ЭТОТ МЕТОД ДУБЛИРУЕТСЯ В [DatabaseEntities.kt]
  * Convert Network results to database objects
  */
-fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
-    return videos.map {
-        DevByteVideo(
-                title = it.title,
-                description = it.description,
-                url = it.url,
-                updated = it.updated,
-                thumbnail = it.thumbnail)
-    }
-}
+//fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
+//    return videos.map {
+//        DevByteVideo(
+//                title = it.title,
+//                description = it.description,
+//                url = it.url,
+//                updated = it.updated,
+//                thumbnail = it.thumbnail)
+//    }
+//}
 
 
 /**
